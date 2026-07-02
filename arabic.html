@@ -118,7 +118,113 @@
   }
 
   /* ─── REFERENCES BAR ─── */
-  .ref-bar {
+  /* ── Organizations Section ── */
+.orgs-section {
+  background: #0d1b2a;
+  border-top: 1px solid rgba(212,175,55,0.2);
+  border-bottom: 1px solid rgba(212,175,55,0.2);
+  padding: 40px 24px;
+}
+.orgs-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.orgs-label {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #d4af37;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+.orgs-subtitle {
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgba(232,228,216,0.55);
+  max-width: 720px;
+  margin: 0 auto 28px;
+  line-height: 1.7;
+}
+.orgs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+@media (max-width: 800px) {
+  .orgs-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .orgs-grid { grid-template-columns: 1fr; }
+}
+.org-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(212,175,55,0.18);
+  border-radius: 12px;
+  padding: 20px 16px;
+  text-align: right;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.org-card:hover {
+  background: rgba(212,175,55,0.06);
+  border-color: rgba(212,175,55,0.4);
+  transform: translateY(-3px);
+}
+.org-icon { font-size: 1.8rem; }
+.org-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #e8e4d8;
+  line-height: 1.4;
+}
+.org-type {
+  font-size: 0.68rem;
+  color: rgba(212,175,55,0.65);
+  line-height: 1.5;
+}
+.org-divider {
+  height: 1px;
+  background: rgba(212,175,55,0.15);
+  margin: 4px 0;
+}
+.org-pillars {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.org-pillar {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 0.72rem;
+  color: rgba(232,228,216,0.7);
+  line-height: 1.5;
+}
+.pillar-icon { font-size: 0.75rem; flex-shrink: 0; margin-top: 2px; }
+.org-link-label {
+  font-size: 0.68rem;
+  color: #d4af37;
+  margin-top: 4px;
+  opacity: 0.75;
+}
+.orgs-banner {
+  background: rgba(212,175,55,0.08);
+  border: 1px solid rgba(212,175,55,0.35);
+  border-radius: 10px;
+  padding: 14px 20px;
+  text-align: center;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #d4af37;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.ref-bar {
     background: var(--navy-light);
     padding: 14px 40px;
     overflow: hidden;
@@ -803,6 +909,111 @@
       <span class="ref-chip">NIST CSF</span>
       <span class="ref-chip">Basel III</span>
       <span class="ref-chip">GRI Standards</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════ ORGS ═══════════════════════ -->
+<div class="orgs-section">
+  <div class="orgs-inner">
+    <div class="orgs-label">نماذج مؤسسية لتطبيق الإطار المرجعي</div>
+
+    <div class="orgs-banner">
+      يمكن مواءمة هذا الإطار مع طبيعة أي جهة حكومية أو مؤسسة أهلية أو غير ربحية مع المحافظة على المبادئ العالمية للحوكمة وإدارة المخاطر والامتثال
+    </div>
+
+    <div class="orgs-subtitle">يتميز الإطار بإمكانية تطبيقه على المؤسسات الحكومية وغير الربحية والتعليمية وفق طبيعة كل جهة، وفيما يلي أمثلة تطبيقية مقترحة</div>
+
+    <div class="orgs-grid">
+
+      <a href="https://rnf.sa/" target="_blank" class="org-card">
+        <div class="org-icon">🌿</div>
+        <div class="org-name">مؤسسة ريف الأهلية</div>
+        <div class="org-type">مؤسسة أهلية · التنمية الريفية المستدامة</div>
+        <div class="org-divider"></div>
+        <div class="org-pillars">
+          <div class="org-pillar">
+            <span class="pillar-icon">🏛️</span>
+            <span>نماذج مقترحة للحوكمة المؤسسية والرقابة</span>
+          </div>
+          <div class="org-pillar">
+            <span class="pillar-icon">⚠️</span>
+            <span>أطر مقترحة لإدارة مخاطر المشاريع التنموية</span>
+          </div>
+          <div class="org-pillar">
+            <span class="pillar-icon">✅</span>
+            <span>مسارات امتثال مقترحة للقطاع غير الربحي</span>
+          </div>
+        </div>
+        <div class="org-link-label">زيارة الموقع ←</div>
+      </a>
+
+      <a href="https://morooj.org/home" target="_blank" class="org-card">
+        <div class="org-icon">🌱</div>
+        <div class="org-name">مؤسسة مروج الأهلية</div>
+        <div class="org-type">مؤسسة أهلية · تنمية الغطاء النباتي والبيئة</div>
+        <div class="org-divider"></div>
+        <div class="org-pillars">
+          <div class="org-pillar">
+            <span class="pillar-icon">🏛️</span>
+            <span>نماذج مقترحة للحوكمة البيئية والمساءلة</span>
+          </div>
+          <div class="org-pillar">
+            <span class="pillar-icon">⚠️</span>
+            <span>أطر مقترحة لمخاطر المشاريع البيئية</span>
+          </div>
+          <div class="org-pillar">
+            <span class="pillar-icon">✅</span>
+            <span>مسارات امتثال مقترحة لمعايير التنمية المستدامة</span>
+          </div>
+        </div>
+        <div class="org-link-label">زيارة الموقع ←</div>
+      </a>
+
+      <a href="https://sekaya.org.sa/" target="_blank" class="org-card">
+        <div class="org-icon">💧</div>
+        <div class="org-name">مؤسسة سقاية الأهلية</div>
+        <div class="org-type">مؤسسة خيرية · القطاع غير الربحي</div>
+        <div class="org-divider"></div>
+        <div class="org-pillars">
+          <div class="org-pillar">
+            <span class="pillar-icon">🏛️</span>
+            <span>نماذج مقترحة لحوكمة الشفافية المؤسسية</span>
+          </div>
+          <div class="org-pillar">
+            <span class="pillar-icon">⚠️</span>
+            <span>أطر مقترحة لمخاطر المشاريع الخيرية</span>
+          </div>
+          <div class="org-pillar">
+            <span class="pillar-icon">✅</span>
+            <span>مسارات امتثال مقترحة للجهات المانحة والرقابية</span>
+          </div>
+        </div>
+        <div class="org-link-label">زيارة الموقع ←</div>
+      </a>
+
+      <a href="https://reef.edu.sa/" target="_blank" class="org-card">
+        <div class="org-icon">🎓</div>
+        <div class="org-name">أكاديمية ريف السعودية</div>
+        <div class="org-type">مؤسسة تعليمية تدريبية · القطاع التعليمي</div>
+        <div class="org-divider"></div>
+        <div class="org-pillars">
+          <div class="org-pillar">
+            <span class="pillar-icon">🏛️</span>
+            <span>نماذج مقترحة للحوكمة الأكاديمية والرقابة</span>
+          </div>
+          <div class="org-pillar">
+            <span class="pillar-icon">⚠️</span>
+            <span>أطر مقترحة لمخاطر جودة البرامج والاعتماد</span>
+          </div>
+          <div class="org-pillar">
+            <span class="pillar-icon">✅</span>
+            <span>مسارات امتثال مقترحة للجهات التعليمية الرقابية</span>
+          </div>
+        </div>
+        <div class="org-link-label">زيارة الموقع ←</div>
+      </a>
+
     </div>
   </div>
 </div>
