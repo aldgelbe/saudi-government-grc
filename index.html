@@ -425,6 +425,81 @@ f<!DOCTYPE html>
     .hero-stats  { flex-direction: row; flex-wrap: wrap; }
     .attr-inner  { grid-template-columns: 1fr; }
   }
+/* ── Organizations Section ── */
+.orgs-section {
+  background: #0d1b2a;
+  border-top: 1px solid rgba(212,175,55,0.2);
+  border-bottom: 1px solid rgba(212,175,55,0.2);
+  padding: 40px 24px;
+}
+.orgs-inner { max-width: 1100px; margin: 0 auto; }
+.orgs-label {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #d4af37;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+.orgs-banner {
+  background: rgba(212,175,55,0.08);
+  border: 1px solid rgba(212,175,55,0.35);
+  border-radius: 10px;
+  padding: 14px 20px;
+  text-align: center;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #d4af37;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+.orgs-subtitle {
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgba(232,228,216,0.55);
+  max-width: 720px;
+  margin: 0 auto 28px;
+  line-height: 1.7;
+}
+.orgs-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 16px;
+}
+@media (max-width: 800px) { .orgs-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 480px) { .orgs-grid { grid-template-columns: 1fr; } }
+.org-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(212,175,55,0.18);
+  border-radius: 12px;
+  padding: 20px 16px;
+  text-align: left;
+  text-decoration: none;
+  transition: background .2s, border-color .2s, transform .15s;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.org-card:hover {
+  background: rgba(212,175,55,0.06);
+  border-color: rgba(212,175,55,0.4);
+  transform: translateY(-3px);
+}
+.org-icon { font-size: 1.8rem; }
+.org-name { font-size: 0.88rem; font-weight: 700; color: #e8e4d8; line-height: 1.4; }
+.org-type { font-size: 0.68rem; color: rgba(212,175,55,0.65); line-height: 1.5; }
+.org-divider { height: 1px; background: rgba(212,175,55,0.15); margin: 4px 0; }
+.org-pillars { display: flex; flex-direction: column; gap: 6px; }
+.org-pillar {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 0.72rem;
+  color: rgba(232,228,216,0.7);
+  line-height: 1.5;
+}
+.pillar-icon { font-size: 0.75rem; flex-shrink: 0; margin-top: 2px; }
+.org-link-label { font-size: 0.68rem; color: #d4af37; margin-top: 4px; opacity: 0.75; }
 </style>
 </head>
 <body>
@@ -481,6 +556,112 @@ f<!DOCTYPE html>
       <span class="std-chip">NIST CSF</span>
       <span class="std-chip">ISO 22301</span>
       <span class="std-chip">GRI Standards</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══ ORGS ═══ -->
+<div class="orgs-section">
+  <div class="orgs-inner">
+    <div class="orgs-label">Institutional Application Models</div>
+
+    <div class="orgs-banner">
+      This framework can be aligned with any government entity, non-profit organisation, or charitable institution while preserving the international principles of governance, risk management and compliance
+    </div>
+
+    <div class="orgs-subtitle">The framework is designed to be applied across government, non-profit, and educational institutions according to each organisation's nature — the following are proposed application examples</div>
+
+    <div class="orgs-grid">
+
+      <a href="https://rnf.sa/" target="_blank" class="org-card">
+        <div class="org-icon">🌿</div>
+        <div class="org-name">Reef National Foundation</div>
+        <div class="org-type">Non-profit Foundation · Rural Sustainable Development</div>
+        <div class="org-divider"></div>
+        <div class="org-pillars">
+          <div class="org-pillar">
+            <span class="pillar-icon">🏛️</span>
+            <span>Proposed models for institutional governance & oversight</span>
+          </div>
+          <div class="org-pillar">
+            <span class="pillar-icon">⚠️</span>
+            <span>Proposed frameworks for development project risk</span>
+          </div>
+          <div class="org-pillar">
+            <span class="pillar-icon">✅</span>
+            <span>Proposed compliance pathways for non-profit sector</span>
+          </div>
+        </div>
+        <div class="org-link-label">Visit Website →</div>
+      </a>
+
+      <a href="https://morooj.org/home" target="_blank" class="org-card">
+        <div class="org-icon">🌱</div>
+        <div class="org-name">Morooj National Foundation</div>
+        <div class="org-type">Non-profit Foundation · Environmental & Vegetation Development</div>
+        <div class="org-divider"></div>
+        <div class="org-pillars">
+          <div class="org-pillar">
+            <span class="pillar-icon">🏛️</span>
+            <span>Proposed models for environmental governance & accountability</span>
+          </div>
+          <div class="org-pillar">
+            <span class="pillar-icon">⚠️</span>
+            <span>Proposed frameworks for environmental project risk</span>
+          </div>
+          <div class="org-pillar">
+            <span class="pillar-icon">✅</span>
+            <span>Proposed compliance pathways for SDG standards</span>
+          </div>
+        </div>
+        <div class="org-link-label">Visit Website →</div>
+      </a>
+
+      <a href="https://sekaya.org.sa/" target="_blank" class="org-card">
+        <div class="org-icon">💧</div>
+        <div class="org-name">Sekaya Charitable Foundation</div>
+        <div class="org-type">Charitable Foundation · Non-profit Sector</div>
+        <div class="org-divider"></div>
+        <div class="org-pillars">
+          <div class="org-pillar">
+            <span class="pillar-icon">🏛️</span>
+            <span>Proposed models for transparency governance</span>
+          </div>
+          <div class="org-pillar">
+            <span class="pillar-icon">⚠️</span>
+            <span>Proposed frameworks for charitable project risk</span>
+          </div>
+          <div class="org-pillar">
+            <span class="pillar-icon">✅</span>
+            <span>Proposed compliance pathways for donor & regulatory bodies</span>
+          </div>
+        </div>
+        <div class="org-link-label">Visit Website →</div>
+      </a>
+
+      <a href="https://reef.edu.sa/" target="_blank" class="org-card">
+        <div class="org-icon">🎓</div>
+        <div class="org-name">Reef Saudi Academy</div>
+        <div class="org-type">Educational & Training Institution · Education Sector</div>
+        <div class="org-divider"></div>
+        <div class="org-pillars">
+          <div class="org-pillar">
+            <span class="pillar-icon">🏛️</span>
+            <span>Proposed models for academic governance & oversight</span>
+          </div>
+          <div class="org-pillar">
+            <span class="pillar-icon">⚠️</span>
+            <span>Proposed frameworks for programme quality & accreditation risk</span>
+          </div>
+          <div class="org-pillar">
+            <span class="pillar-icon">✅</span>
+            <span>Proposed compliance pathways for education regulatory bodies</span>
+          </div>
+        </div>
+        <div class="org-link-label">Visit Website →</div>
+      </a>
+
     </div>
   </div>
 </div>
